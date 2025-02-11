@@ -1,11 +1,16 @@
 .header {
-  top: 17px;
+  top: 47px;
   max-width: var(--max-width-container);
   width: 100%;
   height: var(--height-header);
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  transition: var(--duration);
+  &.--scrollheader {
+    top: -10px;
+    transition: var(--duration);
+  }
   .header__icons {
     gap: 30px;
     .svg-wrapper {

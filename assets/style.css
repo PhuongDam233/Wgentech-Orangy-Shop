@@ -1,5 +1,6 @@
 .announcement-bar {
-  height: 36px; }
+  height: 36px;
+  top: 30px; }
   .announcement-bar .announcement-bar__message {
     font-size: 1.2rem;
     line-height: 2rem; }
@@ -23,13 +24,17 @@
         line-height: 1.4rem; }
 
 .header {
-  top: 17px;
+  top: 47px;
   max-width: var(--max-width-container);
   width: 100%;
   height: var(--height-header);
   position: absolute;
   left: 50%;
-  transform: translateX(-50%); }
+  transform: translateX(-50%);
+  transition: var(--duration); }
+  .header.--scrollheader {
+    top: -10px;
+    transition: var(--duration); }
   .header .header__icons {
     gap: 30px; }
     .header .header__icons .svg-wrapper {

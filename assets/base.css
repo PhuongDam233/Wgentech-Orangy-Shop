@@ -2136,6 +2136,7 @@ input[type="checkbox"] {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  top: 30px;
 }
 
 .utility-bar--bottom-border {
@@ -3728,90 +3729,10 @@ body {
   --white-cl: #ffffff;
 
   /* font size */
-  --fs-h1: 7.2rem;
-  --lh1-h1: 9rem;
-
-  --fs-h1-collection: 5.625rem;
-  --lh-h1-collection: 8rem;
-
-  --fs-p-hero: 1.8rem;
-  --lh-p-hero: 3rem;
-
-  --fs-h2: 3.6rem;
-  --lh1-h2: 4.8rem;
-
-  --fs-large: 5.638rem;
-  --lh-large: 8rem;
-
-  --fs-h3: 2.4rem;
-  --lh-h3: 3.8rem;
-
-  --fs-h3-l: 2.6rem;
-  --lh-h3-l: 3.8rem;
-
-  --fs-h3-s: 2rem;
-  --lh-h3-s: 3.2rem;
-
-  --fs-text-banner-small: 3.438rem;
-  --lh-text-banner-small: 4.8rem;
-
-  --fs-h4: 1.65rem;
-  --lh-h4: 2.5rem;
-
-  --fs-popup: 3.6rem;
-  --lh-popup: 5.2rem;
-
-  --fs-popup-top: 3.2rem;
-  --fs-popup-bottom: 1.4rem;
-  --lh-popup-bottom: 2.4rem;
-
-  --fs-body-l: 2rem;
-  --lh-body-l: 3.2rem;
-
-  --fs-body: 1.6rem;
-  --fs-body-s: 1.5rem;
-  --lh-body: 2.4rem;
-
-  --fs-textlabel: 1.4rem;
-  --lh-textlabel: 2.2rem;
-  --lh-textlabel-s: 1.8rem;
-
-  --fs-texttag: 1.4rem;
-  --lh-texttag: 1.8rem;
-
-  --fs-price-sale: 1.6rem;
-
-  --fs-text-carousel: 7.4rem;
-  --lh-text-carousel: 9rem;
-
-  --fs-text-footer: 3.2rem;
-  --lh-text-footer: 4.2rem;
-
-  --fs-text-service: 1.6rem;
-  --lh-text-service: 2.4rem;
-
-  --fs-text-large: 5.6rem;
-  --lh-text-large: 8rem;
-
-  --fs-text-s: 3.2rem;
-  --lh-text-s: 5.6rem;
-
-  --fs-textbtn: 1.6rem;
-  --lh-textbtn: 3rem;
-  --ls-textbtn: 1.28px;
-
-  --lh-name-product: 2.59rem;
-  --lh-price-product: 2.25rem;
-
-  --ls: 0rem;
-
+  
   /* General Variable */
   --height-header: 22px;
   --height-announcement-bar: 36px;
-  --height-button: 52px;
-  --height-button-small: 34px;
-  --pd-section: 120px;
-  --grid-shopify-vertical-spacing: 30px;
 
   /* Timing Transition Variable */
   --duration: 0.3s;
