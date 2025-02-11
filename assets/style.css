@@ -22,6 +22,9 @@
       .announcement-bar .announcement-bar__time .timeline .label {
         font-size: 0.9rem;
         line-height: 1.4rem; }
+  @media screen and (max-width: 1024px) {
+    .announcement-bar .announcement-bar__message span:nth-child(2) {
+      display: none; } }
 
 .header {
   top: 47px;

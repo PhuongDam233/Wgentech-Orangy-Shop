@@ -27,4 +27,13 @@
       }
     }
   }
+  @media screen and (max-width: 1024px) {
+    .announcement-bar__message {
+      span {
+        &:nth-child(2) {
+          display: none;
+        }
+      }
+    }
+  }
 }
