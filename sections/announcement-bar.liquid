@@ -1,5 +1,6 @@
 {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{{ 'style.css' | asset_url | stylesheet_tag }}
 
 {%- liquid
   assign social_icons = true
@@ -42,12 +43,51 @@
           {%- endif -%}
           <p class="announcement-bar__message h5">
             <span>{{ section.blocks.first.settings.text | escape }}</span>
+            
             {%- if section.blocks.first.settings.link != blank -%}
               {{- 'icon-arrow.svg' | inline_asset_content -}}
             {%- endif -%}
           </p>
           {%- if section.blocks.first.settings.link != blank -%}
             </a>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+      <div
+        class="announcement-bar{% if section.settings.show_social %} announcement-bar--one-announcement{% endif %}"
+        role="region"
+        aria-label="{{ 'sections.header.announcement' | t }}"
+        {{ block.shopify_attributes }}
+      >
+        {%- if section.blocks.first.settings.text != blank -%}
+          {%- if section.blocks.first.settings.link != blank -%}
+          {%- endif -%}
+          <div class="announcement-bar__time h5">
+            <div id="day" class="timeline">
+              <span  class="time">00</span>
+              <span class="label">days</span>
+            </div>
+            <div class="timeline">:</div>
+            <div id="hour" class="timeline">
+              <span class="time">10</span>
+              <span class="label">hours</span>
+            </div>
+            <div class="timeline">:</div>
+            <div id="min" class="timeline">
+              <span class="time">37</span>
+              <span class="label">mins</span>
+            </div>
+            <div class="timeline">:</div>
+            <div id="sec" class="timeline">
+              <span class="time">42</span>
+              <span class="label">sec</span>
+            </div>
+            {% comment %} <span>{{ section.blocks.first.settings.text | escape }}</span> {% endcomment %}
+            {%- if section.blocks.first.settings.link != blank -%}
+              {{- 'icon-arrow.svg' | inline_asset_content -}}
+            {%- endif -%}
+          </div>
+          {%- if section.blocks.first.settings.link != blank -%}
           {%- endif -%}
         {%- endif -%}
       </div>

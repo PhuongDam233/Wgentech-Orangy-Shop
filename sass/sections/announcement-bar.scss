@@ -1,0 +1,29 @@
+.announcement-bar {
+  height: 36px;
+  .announcement-bar__message {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  .announcement-bar__time {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    .timeline {
+      height: 100%;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      flex-direction: column;
+      .time {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+      }
+      .label {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+      }
+    }
+  }
+}

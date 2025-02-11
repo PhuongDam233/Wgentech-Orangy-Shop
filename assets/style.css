@@ -1,0 +1,25 @@
+.announcement-bar {
+  height: 36px; }
+  .announcement-bar .announcement-bar__message {
+    font-size: 1.2rem;
+    line-height: 2rem; }
+  .announcement-bar .announcement-bar__time {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    gap: 10px; }
+    .announcement-bar .announcement-bar__time .timeline {
+      height: 100%;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      flex-direction: column; }
+      .announcement-bar .announcement-bar__time .timeline .time {
+        font-size: 1.4rem;
+        line-height: 2.2rem; }
+      .announcement-bar .announcement-bar__time .timeline .label {
+        font-size: 0.9rem;
+        line-height: 1.4rem; }
+
+/*# sourceMappingURL=style.css.map */
