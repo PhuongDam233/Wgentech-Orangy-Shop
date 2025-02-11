@@ -88,7 +88,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 .page-width.drawer-menu {
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 .page-width-desktop {
@@ -492,7 +492,7 @@ h6:empty {
   display: inline-block;
   border: none;
   box-shadow: none;
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 0.3rem;
   color: rgb(var(--color-link));
   background-color: transparent;
@@ -2127,11 +2127,15 @@ input[type="checkbox"] {
 
 /* utility-bar */
 .utility-bar {
-  height: 100%;
+  height: var(--height-announcement-bar);
+  width: 100%;
   max-width: var(--max-width-container);
   margin-left: auto;
   margin-right: auto;
   border-radius: 8px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .utility-bar--bottom-border {
@@ -2550,7 +2554,7 @@ input[type="checkbox"] {
   display: flex;
   grid-area: icons;
   justify-self: end;
-  padding-right: 0.8rem;
+  padding-right: 1.4rem;
 }
 
 .header__icons .shopify-app-block {
@@ -2575,8 +2579,8 @@ input[type="checkbox"] {
 }
 
 .header__icon .svg-wrapper {
-  width: 44px;
-  height: 44px;
+  /* width: 44px;
+  height: 44px; */
 }
 
 .header__icon::after {
@@ -3720,21 +3724,8 @@ body {
   --max-width-page: 2560px;
   --max-width-container: 1376px;
   --gap: 20px;
-  --gray-l-cl: #d1ceca;
-  --black-cl: #000000;
-  --black-light-cl: #333333;
-  --red-cl: #ee0000;
-  --red-bold-cl: #a42003;
-  --red-tag-sale-cl: #a42003;
-  --blue-cl: #6495ed;
-  --blue-green-cl: #054e4a;
-  --grey-cl: #f4f4f4;
-  --grey-boder-cl: #c5c2be;
+
   --white-cl: #ffffff;
-  --brown-cl: #6e331a;
-  --background-contact-cl: #f6f2ee;
-  --background-popup-cl: #14141436;
-  --border-bottom-accordion-cl: #ededed;
 
   /* font size */
   --fs-h1: 7.2rem;
@@ -3815,8 +3806,8 @@ body {
   --ls: 0rem;
 
   /* General Variable */
-  --height-header: 40px;
-  --height-announcement-bar: 34px;
+  --height-header: 22px;
+  --height-announcement-bar: 36px;
   --height-button: 52px;
   --height-button-small: 34px;
   --pd-section: 120px;

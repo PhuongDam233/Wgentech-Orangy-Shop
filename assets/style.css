@@ -22,4 +22,34 @@
         font-size: 0.9rem;
         line-height: 1.4rem; }
 
+.header {
+  top: 17px;
+  max-width: var(--max-width-container);
+  width: 100%;
+  height: var(--height-header);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+  .header .header__icons {
+    gap: 30px; }
+    .header .header__icons .svg-wrapper {
+      color: var(--white-cl);
+      text-transform: uppercase;
+      font-size: 1.4rem; }
+    .header .header__icons .header__icon-search {
+      position: absolute;
+      left: -30px;
+      top: 0; }
+    .header .header__icons .header__icon-bag {
+      padding-right: 23px; }
+  .header .menu-drawer-container {
+    padding-left: 10px; }
+    .header .menu-drawer-container .header__icon {
+      display: flex;
+      gap: 21px; }
+      .header .menu-drawer-container .header__icon .svg-wrapper {
+        color: var(--white-cl);
+        text-transform: uppercase;
+        font-size: 1.4rem; }
+
 /*# sourceMappingURL=style.css.map */
